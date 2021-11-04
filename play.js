@@ -1,7 +1,8 @@
 const connect = require("./client.js")
-const setupInput= require("./index.js")
+const setupInput= require("./input.js")
 
 
 console.log("Connecting ...");
-connect();
-setupInput();
+let conn = connect();
+setupInput(conn);
+

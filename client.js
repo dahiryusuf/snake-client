@@ -13,14 +13,6 @@ const connect = function () {
   conn.on("connect", () => {
     console.log("Successfully connected to game server");
     conn.write('Name: DYY')
-    // let i = 0;
-    // while(i <= 300){
-    // setTimeout(() => {
-    //   conn.write('Move: up')
-    // }, i);
-    // i+=50;
-  // }
-    // code that does something when the connection is first established
   });
   // interpret incoming data as text
   conn.setEncoding("utf8");
